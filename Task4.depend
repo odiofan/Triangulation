@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1433260844 source:c:\users\peter\documents\h63esd\task4\main.cpp
+	<iostream>
+	<fstream>
+	"triangulation.h"
+
+1433510640 c:\users\peter\documents\h63esd\task4\vertex.h
+	<iostream>
+	<vector>
+
+1433260807 c:\users\peter\documents\h63esd\task4\triangle.h
+	<iostream>
+	<math.h>
+
+1433260807 c:\users\peter\documents\h63esd\task4\triangulation.h
+	<iostream>
+	"vertex.h"
+	<fstream>
+	"triangle.h"
+
