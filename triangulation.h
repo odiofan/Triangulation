@@ -17,7 +17,7 @@ private:
 
 public:
 
-    int getNoVertices(void)const{return noOfVertices;};
+    int getNoVertices(void)const{return noOfVertices;};      //get functions
     int getNoDimensions(void)const{return noDimensions;};
     int getNoCells(void)const{return noOfCells;};
     int getAttsPerCell(void)const{return attsPerCell;};
@@ -28,14 +28,14 @@ public:
     Triangle<T> getTri(int i)const{return triangles[i];};
 
 
-    void setNoVertices(int no){noOfVertices=no;};
+    void setNoVertices(int no){noOfVertices=no;};         //set functions
     void setNoDimensions(int dim){noDimensions=dim;};
     void setAttsPerVert(int no){attsPerVert=no;};
     void setNoCells(int no){noOfCells=no;};
     void setAttsPerCell(int no){attsPerCell=no;};
     void setVertsPerCell(int no){vertsPerCell=no;};
 
-    Triangulation(istream& _input);
+    Triangulation(istream& _input);          //constructor that takes file as argument
 
     void findPointLocation(vertex<T> findMe);
 
@@ -44,7 +44,7 @@ public:
 
 };
 
-template<typename T> Triangulation<T>::Triangulation(istream& input){
+template<typename T> Triangulation<T>::Triangulation(istream& input){      //constructor takes file as argument and creates triangulation
 
     int noOfVertices,noDimensions, noOfCells, attsPerCell,attsPerVert,vertsPerCell;
     input>> noOfVertices >> noDimensions >> attsPerVert;

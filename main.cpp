@@ -6,15 +6,12 @@ using namespace std;
 
 int main()
 {
-    //int noVertices, noDimensions, noAttributes, noTriangle, noVertsCell, noAttsCell;
 
-     struct timeval start_time,end_time;
-
-    gettimeofday(&start_time,NULL);
+    //code used to test that the program is fully functional
 
     ifstream fin("triangulation#4.tri");
 
-    Triangulation<double> tri(fin);
+    Triangulation<double> tri(fin);                     //create triangulation object from input data
 
     vertex<double> vert1(98.297,2.39778,995,0,0);        //vertices of triangle 8
     vertex<double> vert2(96.3014,3.56223,995,1,0);
@@ -41,10 +38,6 @@ int main()
     output << tri;
     output << flush;
     output.close();
-
-    gettimeofday(&end_time,NULL);
-
-    cout<<"\n\ngettimeofday wall time="<<end_time.tv_sec - start_time.tv_sec+(end_time.tv_usec-start_time.tv_usec)/1e6;
 
 
 
